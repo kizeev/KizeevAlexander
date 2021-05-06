@@ -6,22 +6,116 @@
     <style>
         td{
             border: solid 1px black;
-            height: 100px; width: 100px;
+            height: 70px; width: 70px;
         }
         table{
             border-spacing: 0px;
+            counter-reset: num 65;
         }
         tr:nth-child(even) td:nth-child(even){
-            background-color: black;            
+            background-color: black; 
+                       
         }
         tr:nth-child(odd) td:nth-child(odd){
-            background-color: black;            
+            background-color: black;   
+                    
         }
-        td::before{
-            
-            color: blue;
-            
-        }
+        tr:nth-child(1) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white; padding-left: 11px;
+            font-size: 50px; font-weight: bold;                       
+        }   
+        tr:nth-child(1) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(2) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+        }  
+        tr:nth-child(2) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(3) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+        }  
+        tr:nth-child(3) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(4) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(4) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+            tr:nth-child(5) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px; font-weight: bold;                        
+        }   
+        tr:nth-child(5) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(6) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+        }  
+        tr:nth-child(6) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(7) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+        }  
+        tr:nth-child(7) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(8) td:nth-child(odd):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: black;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
+        tr:nth-child(8) td:nth-child(even):before{
+            counter-increment: num -1;
+            content: counter(num);
+            color: white;padding-left: 11px;
+            font-size: 50px;font-weight: bold;
+            }
     </style>
 </head>
 <body>

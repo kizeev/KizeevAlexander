@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div, tr{
+            background-color: lightgray;
+            width: 100px; height: 20px;
+            float: none;
+            border-style: solid;
+            border-radius: 3px;
+            border-color: black;
+            border-width: 1px;            
+        }        
+        .desktop{
+            display: none;
+        }
+        @media all and (min-width: 640px){
+            .mobile{
+                display: none;
+            }
+            .desktop{
+                display: block;
+            }
+            div{
+                float: left;
+            }
+            table{
+                border-spacing: 0px;
+                margin-left: -1px;
+                margin-top: -1px;                
+            }
+            td{
+                border-style: solid;
+                border-radius: 3px;
+                border-color: black;
+                border-width: 1px;
+                width: 100px; height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+       
+    <div>Понедельник</div>
+    <div>Вторник</div>
+    <div class="mobile">Среда</div>
+    <div class="desktop">
+        <table>
+            <tr>
+                <td>Среда</td> 
+            </tr>
+            <tr>
+                <td>Завтрак</td>
+            </tr>
+            <tr>
+                <td>Обед</td>
+            </tr>
+            <tr>
+                <td>Ужин</td>
+            </tr>
+        </table>
+    </div>
+    <div>Четверг</div>
+    <div>Пятница</div>
+    <div>Суббота</div>
+    
+</body>
+</html>
